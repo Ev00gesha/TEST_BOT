@@ -15,7 +15,7 @@ def test_time(message):
     spis_time_day[0] += 3
     
     wb = load_workbook("testshd.xlsx")
-    sheet = wb["TEST"]
+    sheet = wb["TEST2"]
 
     for i in range(sheet.max_row):
         spis_time_shd = str(sheet["B" + str(i + 1)].value).split(":")
